@@ -1,0 +1,36 @@
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 150px;
+    background-color: lightgray;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.timer {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.app {
+    text-align: center;
+    padding: 20px;
+}
+
+.card__content {
+    font-size: 30px;
+}
