@@ -14,7 +14,7 @@ const Board = () => {
     const [boardSize, setBoardSize] = useState(2);
     const [availableOptions, setAvailableOptions] = useState([]);
     const [timerKey, setTimerKey] = useState(0);
-    const timeoutRef = useRef(null);  // Использование useRef для хранения идентификатора таймаута
+    const timeoutRef = useRef(null);
 
     useEffect(() => {
         fetchCards().then(data => {
