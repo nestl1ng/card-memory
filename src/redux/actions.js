@@ -1,4 +1,4 @@
-import {MATCH_CARDS, SET_CARDS, FLIP_CARD, RESET_FLIPPED_CARDS} from "../settings";
+import {MATCH_CARDS, SET_CARDS, FLIP_CARD, RESET_FLIPPED_CARDS, CLEAR_DATA} from "../settings";
 
 export const setCards = cards => ({
     type: SET_CARDS,
@@ -18,3 +18,7 @@ export const matchCards = cards => ({
     type: MATCH_CARDS,
     payload: cards,
 });
+
+export const clearData = () => ({
+    type: CLEAR_DATA
+})

@@ -1,4 +1,4 @@
-import { SET_CARDS, FLIP_CARD, RESET_FLIPPED_CARDS, MATCH_CARDS } from './../settings';
+import { SET_CARDS, FLIP_CARD, RESET_FLIPPED_CARDS, MATCH_CARDS, CLEAR_DATA } from './../settings';
 
 const initialState = {
     cards: [],
@@ -29,6 +29,13 @@ const reducer = (state = initialState, {payload,type}) => {
                 matchedCards: [...state.matchedCards, ...state.flippedCards],
                 flippedCards: [],
             };
+        case CLEAR_DATA:
+            return {
+                ...state,
+                cards: [],
+                flippedCards: [],
+                matchedCards: [],
+            }
         default:
             return state;
     }

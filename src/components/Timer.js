@@ -17,6 +17,10 @@ const Timer = () => {
         return () => clearInterval(timer);
     }, [matchedCards, cards]);
 
+    useEffect(() => {
+        setTime(0);
+    }, []);
+
     return <div className="timer">Time: {time}s</div>;
 };
 
