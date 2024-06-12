@@ -17,6 +17,7 @@ const Board = () => {
     const timeoutRef = useRef(null);
 
     useEffect(() => {
+        //test
         fetchCards().then(data => {
             const cards = duplicatedCards(data);
             const options = generateOptions(cards.length, gridSizes);
